@@ -1,12 +1,15 @@
+//C program to print all node of a tree
+
 #include <stdio.h>
 
+//Creat struct node
 struct Node
 {
     int value;
     struct Node * left, * right;
 };
 
-
+//this function print all node of tree
 void explore (struct Node * root)
 {
     if (root == NULL) { return; }
@@ -65,6 +68,7 @@ int main() {
         current++;
     }
 
+    // Call the explore funtion as 
     explore (root);
 
     return 0;
